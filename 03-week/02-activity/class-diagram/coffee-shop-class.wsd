@@ -1,0 +1,273 @@
+@startuml
+
+' Coffee Shop Class Diagram
+' Based on model.sql from 03-week/02-activity
+
+note as N1
+    <b>Nota Importante:</b>
+    Todas las entidades del sistema tendrán
+    sus respectivos métodos de encapsulamiento
+    para cada atributo:
+    
+    • <i>get()</i>: Para obtener el valor del atributo
+    • <i>set()</i>: Para asignar/modificar el valor del atributo
+    
+    Ejemplo: Para el atributo "name"
+    - getName(): string
+    - setName(string): void
+end note
+
+' ========================
+' SECURITY MODULE
+' ========================
+
+class Person {
+    -personId: int
+    -firstName: string
+    -lastName: string
+    -email: string
+    -phone: string
+    -address: string
+    -createdAt: timestamp
+    -updatedAt: timestamp
+}
+
+class Role {
+    -roleId: int
+    -name: string
+    -description: string
+    -isActive: boolean
+    -createdAt: timestamp
+    -updatedAt: timestamp
+}
+
+class User {
+    -userId: int
+    -personId: int
+    -email: string
+    -passwordHash: string
+    -isActive: boolean
+    -lastLogin: timestamp
+    -createdAt: timestamp
+    -updatedAt: timestamp
+}
+
+class Module {
+    -moduleId: int
+    -name: string
+    -description: string
+    -routePath: string
+    -icon: string
+    -parentModuleId: int
+    -sortOrder: int
+    -isActive: boolean
+    -createdAt: timestamp
+}
+
+class View {
+    -viewId: int
+    -moduleId: int
+    -name: string
+    -routePath: string
+    -description: string
+    -sortOrder: int
+    -isActive: boolean
+    -createdAt: timestamp
+}
+
+class Action {
+    -actionId: int
+    -name: string
+    -description: string
+    -createdAt: timestamp
+}
+
+class UserRole {
+    -userRoleId: int
+    -userId: int
+    -roleId: int
+    -assignedAt: timestamp
+    -assignedBy: int
+}
+
+class RoleModule {
+    -roleModuleId: int
+    -roleId: int
+    -moduleId: int
+    -canRead: boolean
+    -canCreate: boolean
+    -canUpdate: boolean
+    -canDelete: boolean
+    -createdAt: timestamp
+}
+
+class ViewModule {
+    -viewModuleId: int
+    -viewId: int
+    -moduleId: int
+    -createdAt: timestamp
+}
+
+class ViewAction {
+    -viewActionId: int
+    -viewId: int
+    -actionId: int
+    -createdAt: timestamp
+}
+
+' Security Relationships
+UserRole *-- User 
+UserRole *-- Role
+RoleModule *-- Role
+RoleModule *-- Module
+ViewModule *-- View
+ViewModule *-- Module
+ViewAction *-- View
+ViewAction *-- Action
+View *-- Module
+
+' ========================
+' BUSINESS MODULE
+' ========================
+
+class Category {
+    -categoryId: int
+    -name: string
+    -description: string
+    -imageUrl: string
+    -isActive: boolean
+    -createdAt: timestamp
+    -updatedAt: timestamp
+}
+
+class Product {
+    -productId: int
+    -categoryId: int
+    -name: string
+    -description: text
+    -price: decimal
+    -imageUrl: string
+    -isAvailable: boolean
+    -isActive: boolean
+    -createdAt: timestamp
+    -updatedAt: timestamp
+}
+
+class Inventory {
+    -inventoryId: int
+    -productId: int
+    -currentStock: int
+    -minimumStock: int
+    -maximumStock: int
+    -reorderPoint: int
+    -lastRestockedAt: timestamp
+    -createdAt: timestamp
+    -updatedAt: timestamp
+}
+
+class StockMovement {
+    -movementId: int
+    -productId: int
+    -movementType: enum
+    -quantity: int
+    -reason: string
+    -referenceId: int
+    -performedBy: int
+    -createdAt: timestamp
+}
+
+class Cart {
+    -cartId: int
+    -userId: int
+    -status: enum
+    -createdAt: timestamp
+    -updatedAt: timestamp
+}
+
+class CartItem {
+    -cartItemId: int
+    -cartId: int
+    -productId: int
+    -quantity: int
+    -unitPrice: decimal
+    -createdAt: timestamp
+}
+
+class PaymentMethod {
+    -paymentMethodId: int
+    -name: string
+    -isActive: boolean
+    -createdAt: timestamp
+}
+
+class PaymentStatus {
+    -statusId: int
+    -name: string
+    -description: string
+    -createdAt: timestamp
+}
+
+class BillStatus {
+    -statusId: int
+    -name: string
+    -description: string
+    -createdAt: timestamp
+}
+
+class Bill {
+    -billId: int
+    -userId: int
+    -billNumber: string
+    -statusId: int
+    -paymentMethodId: int
+    -paymentStatusId: int
+    -subtotal: decimal
+    -taxAmount: decimal
+    -discountAmount: decimal
+    -totalAmount: decimal
+    -shippingAddress: text
+    -notes: text
+    -billedAt: timestamp
+    -updatedAt: timestamp
+}
+
+class BillDetail {
+    -billDetailId: int
+    -billId: int
+    -productId: int
+    -quantity: int
+    -unitPrice: decimal
+    -subtotal: decimal
+    -createdAt: timestamp
+}
+
+class AuditLog {
+    -auditId: bigint
+    -tableName: string
+    -recordId: int
+    -action: enum
+    -oldData: json
+    -newData: json
+    -changedBy: int
+    -ipAddress: string
+    -createdAt: timestamp
+}
+
+' Business Relationships
+Category *-- Product
+Product *-- Inventory
+Product *-- StockMovement
+Cart *-- User
+Cart *-- CartItem
+CartItem *-- Product
+Bill *-- User
+Bill *-- BillDetail
+BillDetail *-- Product
+Bill *-- PaymentMethod
+Bill *-- PaymentStatus
+Bill *-- BillStatus
+User *-- AuditLog
+StockMovement *-- User
+StockMovement *-- Product
+
+@enduml

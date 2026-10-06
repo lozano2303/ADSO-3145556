@@ -137,12 +137,12 @@ git log --all --no-merges --author="$AUTOR" --since="$DESDE" --until="$HASTA" \
 
 ## 4. Verificación del aprendiz
 
-- [ ] Todos los commits listados los hice con mi cuenta (aparece mi foto de perfil en GitHub).
-- [ ] Incluí los commits de **todas las ramas**, no solo de `main`.
-- [ ] Todos los commits caen entre el 11 de agosto y el 30 de septiembre de 2026 (hora Colombia).
-- [ ] Cada enlace de commit abre en GitHub.
-- [ ] Los repositorios en los que no tengo commits quedaron en la tabla con 0.
-- [ ] El total de cada repositorio coincide con el número de filas de su tabla.
+- [SI] Todos los commits listados los hice con mi cuenta (aparece mi foto de perfil en GitHub).
+- [SI] Incluí los commits de **todas las ramas**, no solo de `main`.
+- [SI] Todos los commits caen entre el 11 de agosto y el 30 de septiembre de 2026 (hora Colombia).
+- [SI] Cada enlace de commit abre en GitHub.
+- [SI] Los repositorios en los que no tengo commits quedaron en la tabla con 0.
+- [SI] El total de cada repositorio coincide con el número de filas de su tabla.
 
 ## 5. Observaciones
 

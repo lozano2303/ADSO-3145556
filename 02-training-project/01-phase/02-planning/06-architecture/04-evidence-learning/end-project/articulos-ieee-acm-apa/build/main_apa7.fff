@@ -1,0 +1,18 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[htbp]
+    \centering
+    \includegraphics[width=0.48\textwidth]{graphics/SERVICIOS.pdf}
+    \caption{Arquitectura de Servicios RESTful}
+    \label{fig:servicios}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[htbp]
+    \centering
+    \includegraphics[width=0.48\textwidth]{graphics/DiagramaScrum.pdf}
+    \caption{Diagrama de los beneficios de Scrum}
+    \label{fig:scrum}
+\end{figure*}

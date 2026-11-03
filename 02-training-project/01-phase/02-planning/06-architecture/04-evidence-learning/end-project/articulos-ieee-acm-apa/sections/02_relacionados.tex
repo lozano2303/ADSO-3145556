@@ -1,0 +1,21 @@
+\section{Marco teórico y trabajos relacionados}
+\subsection{Patrón de diseño}
+Los patrones de diseño constituyen soluciones ya probadas y estructuradas para problemas recurrentes en el desarrollo de software. Su objetivo principal es evitar la duplicación de código y favorecer su reutilización, aportando claridad y modularidad en los sistemas \cite{gavilanez2022analisis}. En el desarrollo backend, patrones como el Modelo-Vista-Controlador (MVC) son cruciales para mantener una lógica de organización que facilita el mantenimiento y la comprensión por parte de otros desarrolladores \cite{zambrano_patron}.
+
+\subsection{Arquitectura de software y seguridad}
+La arquitectura de software se concibe como la estructura fundamental de un sistema, que facilita la escalabilidad, el mantenimiento y la comprensión global del sistema. En el contexto backend, una arquitectura bien definida es indispensable, ya que la seguridad del software está estrechamente vinculada a la calidad de su desarrollo. La falta de organización y metodologías claras no solo dificulta la evolución del software, sino que también incrementa los riesgos y vulnerabilidades en sistemas críticos.
+
+\subsection{Modelo-Vista-Controlador (MVC)}
+El patrón Modelo-Vista-Controlador (MVC) organiza una aplicación en tres componentes principales con el propósito de reducir el acoplamiento y estandarizar el diseño:
+•	Modelo: Encargado de la gestión de datos, reglas de negocio y estado.
+•	Vista: Define la interfaz de usuario y muestra la información al usuario.
+•	Controlador: Actúa como intermediario, gestionando las interacciones y solicitudes del usuario para actualizar el Modelo o la Vista.
+Esta separación favorece la mantenibilidad y la testabilidad del software, permitiendo trabajar de forma independiente en cada componente \cite{hernandez2015guia}. En el desarrollo backend, el MVC es vital para la organización de los servicios REST, donde el Controlador gestiona las peticiones y el Modelo maneja la lógica de negocio y la persistencia de datos.
+
+\subsection{Servicios Web RESTful (Backend)}
+Los servicios REST (Representational State Transfer) son un estilo arquitectónico que se apoya en el protocolo HTTP para la comunicación entre cliente y servidor. Se han convertido en la base del desarrollo backend moderno debido a su simplicidad, facilidad de implementación y escalabilidad frente a tecnologías como SOAP y WSDL. Utilizan métodos HTTP estándar (GET, POST, PUT, DELETE) para realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar) sobre recursos.
+
+\subsection{Frameworks Backend: Spring Boot vs Node.js}
+La elección del framework backend es determinante para el éxito del proyecto \cite{haro2019nodejs}.
+
+No existe un framework superior, sino que la elección debe responder al contexto del proyecto, las necesidades de seguridad y la experiencia del equipo \cite{brito_consideraciones}.

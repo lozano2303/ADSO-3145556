@@ -1,0 +1,188 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{gavilanez2022analisis}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a41840740acde4934f63599f9696e1ea}{%
+           family={Gavilánez\bibnamedelima Álvarez},
+           familyi={G\bibinitperiod\bibinitdelim Á\bibinitperiod},
+           given={O.\bibnamedelimi D.},
+           giveni={O\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=a8dd9da15de4919d4ffe95e52d690cfb}{%
+           family={Layedra},
+           familyi={L\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=fcc0712d606c709ec368ea3ead90c2c8}{%
+           family={Ramos},
+           familyi={R\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{244a54f8acff4048fb44ece6cd1b3b23}
+      \strng{fullhash}{e76a2baa99bb25ca1068482750584c03}
+      \strng{fullhashraw}{e76a2baa99bb25ca1068482750584c03}
+      \strng{bibnamehash}{e76a2baa99bb25ca1068482750584c03}
+      \strng{authorbibnamehash}{e76a2baa99bb25ca1068482750584c03}
+      \strng{authornamehash}{244a54f8acff4048fb44ece6cd1b3b23}
+      \strng{authorfullhash}{e76a2baa99bb25ca1068482750584c03}
+      \strng{authorfullhashraw}{e76a2baa99bb25ca1068482750584c03}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Dialnet}
+      \field{title}{Análisis comparativo de Patrones de Diseño de Software}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=9042927
+      \endverb
+      \verb{url}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=9042927
+      \endverb
+    \endentry
+    \entry{zambrano_patron}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=7254708b5d13b5eabde0fb489b34e2e3}{%
+           family={Zambrano},
+           familyi={Z\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{7254708b5d13b5eabde0fb489b34e2e3}
+      \strng{fullhash}{7254708b5d13b5eabde0fb489b34e2e3}
+      \strng{fullhashraw}{7254708b5d13b5eabde0fb489b34e2e3}
+      \strng{bibnamehash}{7254708b5d13b5eabde0fb489b34e2e3}
+      \strng{authorbibnamehash}{7254708b5d13b5eabde0fb489b34e2e3}
+      \strng{authornamehash}{7254708b5d13b5eabde0fb489b34e2e3}
+      \strng{authorfullhash}{7254708b5d13b5eabde0fb489b34e2e3}
+      \strng{authorfullhashraw}{7254708b5d13b5eabde0fb489b34e2e3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Academia.edu}
+      \field{title}{Patrón Modelo-Vista-Controlador}
+      \verb{urlraw}
+      \verb https://www.academia.edu/16101634/Patr\%C3\%B3n_Modelo_Vista_Controlador
+      \endverb
+      \verb{url}
+      \verb https://www.academia.edu/16101634/Patr%5C%C3%5C%B3n_Modelo_Vista_Controlador
+      \endverb
+    \endentry
+    \entry{hernandez2015guia}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=9c40fefe2d27a405b7c69817e59c8e86}{%
+           family={Hernández\bibnamedelima Saucedo},
+           familyi={H\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={A.\bibnamedelimi L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=c48242c45fe8229a8cebb0011e23c483}{%
+           family={Mejía\bibnamedelima Miranda},
+           familyi={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e47a239ee8cea97a2b2b28562add1a1}
+      \strng{fullhash}{9e47a239ee8cea97a2b2b28562add1a1}
+      \strng{fullhashraw}{9e47a239ee8cea97a2b2b28562add1a1}
+      \strng{bibnamehash}{9e47a239ee8cea97a2b2b28562add1a1}
+      \strng{authorbibnamehash}{9e47a239ee8cea97a2b2b28562add1a1}
+      \strng{authornamehash}{9e47a239ee8cea97a2b2b28562add1a1}
+      \strng{authorfullhash}{9e47a239ee8cea97a2b2b28562add1a1}
+      \strng{authorfullhashraw}{9e47a239ee8cea97a2b2b28562add1a1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Redalyc}
+      \field{title}{Guía de ataques, vulnerabilidades, técnicas y herramientas para aplicaciones web}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://www.redalyc.org/pdf/5122/512251501005.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.redalyc.org/pdf/5122/512251501005.pdf
+      \endverb
+    \endentry
+    \entry{haro2019nodejs}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=8564bcf2cf4c8ce5964f5589448a5f0f}{%
+           family={Haro},
+           familyi={H\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{8564bcf2cf4c8ce5964f5589448a5f0f}
+      \strng{fullhash}{8564bcf2cf4c8ce5964f5589448a5f0f}
+      \strng{fullhashraw}{8564bcf2cf4c8ce5964f5589448a5f0f}
+      \strng{bibnamehash}{8564bcf2cf4c8ce5964f5589448a5f0f}
+      \strng{authorbibnamehash}{8564bcf2cf4c8ce5964f5589448a5f0f}
+      \strng{authornamehash}{8564bcf2cf4c8ce5964f5589448a5f0f}
+      \strng{authorfullhash}{8564bcf2cf4c8ce5964f5589448a5f0f}
+      \strng{authorfullhashraw}{8564bcf2cf4c8ce5964f5589448a5f0f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ProQuest}
+      \field{title}{Node.js vs Spring Boot}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.proquest.com/openview/a78cfaa62708fd24f38ac8d1025050eb/1?pq-origsite=gscholar&cbl=10063
+      \endverb
+      \verb{url}
+      \verb https://www.proquest.com/openview/a78cfaa62708fd24f38ac8d1025050eb/1?pq-origsite=gscholar&cbl=10063
+      \endverb
+    \endentry
+    \entry{brito_consideraciones}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=8f2a25e765bd2d33eae3cdb2eb0b5b62}{%
+           family={Brito\bibnamedelima Acuña},
+           familyi={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f2a25e765bd2d33eae3cdb2eb0b5b62}
+      \strng{fullhash}{8f2a25e765bd2d33eae3cdb2eb0b5b62}
+      \strng{fullhashraw}{8f2a25e765bd2d33eae3cdb2eb0b5b62}
+      \strng{bibnamehash}{8f2a25e765bd2d33eae3cdb2eb0b5b62}
+      \strng{authorbibnamehash}{8f2a25e765bd2d33eae3cdb2eb0b5b62}
+      \strng{authornamehash}{8f2a25e765bd2d33eae3cdb2eb0b5b62}
+      \strng{authorfullhash}{8f2a25e765bd2d33eae3cdb2eb0b5b62}
+      \strng{authorfullhashraw}{8f2a25e765bd2d33eae3cdb2eb0b5b62}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Dialnet}
+      \field{title}{Consideraciones sobre el desarrollo en infraestructuras críticas y software de seguridad}
+      \verb{urlraw}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=8590531
+      \endverb
+      \verb{url}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=8590531
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
